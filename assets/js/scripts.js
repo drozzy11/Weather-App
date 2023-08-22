@@ -176,10 +176,10 @@ function getFiveDayForecast() {
 //Allows for the example data to load for Denver
 function initLoad() {
 
-	var cityHistStore = JSON.parse(localStorage.getItem('location'));
+	var locationHistStore = JSON.parse(localStorage.getItem('location'));
 
-	if (cityHistStore !== null) {
-		locationHist = cityHistStore
+	if (locationHistStore !== null) {
+		locationHist = locationHistStore
 	}
 	getHistory();
 	getWeatherToday();
